@@ -1,0 +1,26 @@
+package test;
+import java.util.Scanner;
+public class Test2 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String a1="aaadefg";
+		String a2="bbbdefg";
+	    System.out.print("请输入要从第几个字符开始截取字符串1");
+	    int c1,c2;
+	    System.out.println();
+	    c1=sc.nextInt()-1;
+	    System.out.println();
+	    System.out.print("请输入要从第几个字符开始截取字符串2");
+	    System.out.println();
+	    c2=sc.nextInt()-1;
+		String b1=a1.substring(c1);
+		String b2=a2.substring(c2);
+		boolean a=b1.equalsIgnoreCase(b2);
+		if(a==false)
+			System.out.print("两个子串不相同");
+		else
+			System.out.print("两个子串相同");
+		
+
+	}

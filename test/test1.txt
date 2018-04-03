@@ -1,0 +1,36 @@
+package test;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int n=2;
+		String a="1231.2232.23,adf,cdf";
+		String[] b=a.split("\\.");
+		String[] c=a.split("\\.",n);
+		String[] d=a.split("\\.|,");/*若要定义多个分割符，用|，此时，\\.|,与\\.|\\,等价*/
+		String[] e=a.split(".");
+		System.out.print("原值:"+a);
+		System.out.println();
+		System.out.print("第一次以.分割完全：");
+		for(String f:b)
+			System.out.print("["+f+"]");
+		System.out.println();
+		System.out.print("第二次以.分割2次：");
+		for(String f:c)
+			System.out.print("["+f+"]");
+		n=1;
+		System.out.println();
+		System.out.print("第三次以.分割1次：");
+		for(String f:c)
+			System.out.print("["+f+"]");
+		System.out.println();
+		System.out.print("第一次以.和，分割：");
+		for(String f:d)
+			System.out.print("["+f+"]");
+		System.out.println();
+		for(String f:e)
+			System.out.print("["+f+"]");
+		
+	}
+
+}

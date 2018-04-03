@@ -1,0 +1,16 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test4 {
+   public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   String R="\\w+@\\w{2,}\\.\\w{2,}";
+	   System.out.println("请输入一个合法的邮箱地址");
+	   String a=sc.next();
+	   if(a.matches(R))
+		   System.out.print(a+"输入合法");
+	   else
+		   System.out.print(a+"输入不合法");
+   }
+}

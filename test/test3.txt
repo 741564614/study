@@ -1,0 +1,17 @@
+package test;
+
+public class test3 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		String a="AdFdc";
+		String b=a.toUpperCase();
+		String c=a.toLowerCase();
+		System.out.print("原值："+a);
+		System.out.println();
+		System.out.print("大写转换："+b);
+		System.out.println();
+		System.out.print("小写转换："+c);
+	}
+
+}

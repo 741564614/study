@@ -1,0 +1,15 @@
+package test;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		StringBuilder a=new StringBuilder("dsfds32432d");
+		System.out.println("原值："+a);
+		for(int b=1;b<=10;b++) {
+			a.append(b);
+		}
+		System.out.print("追加后："+a);
+	}
+
+}

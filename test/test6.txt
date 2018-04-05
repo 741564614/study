@@ -1,0 +1,53 @@
+package test;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Test6 {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner sc3=new Scanner(System.in);
+		int a[][];
+		a=new int[2][];
+		a[0]=new int[3];
+		a[1]=new int[4];
+		System.out.println("请输入七个任意数字");
+		for(int b=0;b<a.length;b++) {
+			for(int c=0;c<a[b].length;c++) {
+				a[b][c]=sc3.nextInt();
+			}
+		}
+		System.out.println("你输入的数为：");
+		for(int x[]:a) {
+			for(int e:x) {
+				System.out.print(e+" ");
+			}
+			System.out.println();
+		}
+		System.out.println("请输入你要替换的数字和替换数");
+		int j=sc3.nextInt();
+		int k=sc3.nextInt();
+		int i=0;
+		int t=0;
+		for(int b=0;b<a.length;b++) {
+			for(int c=0;c<a[b].length;c++) {
+				if(a[b][c]==j) {
+					i=b;
+					t=c;
+					break;
+					}
+				else if(b==a.length&&c==a[b].length)
+					System.out.println("数组中无该数字");
+			}
+		}
+		Arrays.fill(a[i],t,t+1,k);/*如果要替换一维及以上的数组中的元素，需先标注下标*/
+		System.out.println("修改后的数组为：");
+		for(int x[]:a) {
+			for(int e:x) {
+				System.out.print(e+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}

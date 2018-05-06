@@ -1,0 +1,31 @@
+package test;
+import java.util.Scanner;
+public class Test910 {
+	private int chang;
+	private int kuan;
+	public Test910() {
+		chang=0;
+		kuan=0;
+	}
+	public static int s(int i,int k) {
+		int l=0;
+		l=i*k;
+		return l;
+	}
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		@SuppressWarnings("resource")
+		Scanner sc10=new Scanner(System.in);
+		System.out.println("请输入矩形1的长和宽");
+		Test910 t1=new Test910();
+		Test910 t2=new Test910();
+		t1.chang=sc10.nextInt();
+		t1.kuan=sc10.nextInt();
+		System.out.println("请输入矩形2的长和宽");
+		t2.chang=sc10.nextInt();
+		t2.kuan=sc10.nextInt();
+		System.out.print("矩形1、2的面积分别为："+s(t1.chang,t1.kuan)+" "+s(t2.chang,t2.kuan));/*非静态常量是随着对象实例化才分配内存赋值的，你运行main的时候只加载了类，这个时候内存里还没那个变量值咋引用？而加static随类一起赋值，类加载了，内存里也有了*/
+		
+	}
+
+}

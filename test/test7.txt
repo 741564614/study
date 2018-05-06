@@ -1,0 +1,19 @@
+package test;
+import java.util.Arrays;
+public class Test7 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		int a[][]= {{2,5,1},{4,5,1,2}};
+		int b[]= {34,34,22,123};
+		Arrays.sort(a[1]);
+		Arrays.sort(a[0]);/*对于二维数组，sort方法排序需进行两次*/
+		for(int t[]:a) {
+			for(int c:t) {
+			System.out.print(c+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}

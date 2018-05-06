@@ -13,18 +13,18 @@ public class Test910 {
 		return l;
 	}
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		@SuppressWarnings("resource")
 		Scanner sc10=new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¾ØĞÎ1µÄ³¤ºÍ¿í");
+		System.out.println("è¯·è¾“å…¥çŸ©å½¢1çš„é•¿å’Œå®½");
 		Test910 t1=new Test910();
 		Test910 t2=new Test910();
 		t1.chang=sc10.nextInt();
 		t1.kuan=sc10.nextInt();
-		System.out.println("ÇëÊäÈë¾ØĞÎ2µÄ³¤ºÍ¿í");
+		System.out.println("è¯·è¾“å…¥çŸ©å½¢2çš„é•¿å’Œå®½");
 		t2.chang=sc10.nextInt();
 		t2.kuan=sc10.nextInt();
-		System.out.print("¾ØĞÎ1¡¢2µÄÃæ»ı·Ö±ğÎª£º"+s(t1.chang,t1.kuan)+" "+s(t2.chang,t2.kuan));/*·Ç¾²Ì¬³£Á¿ÊÇËæ×Å¶ÔÏóÊµÀı»¯²Å·ÖÅäÄÚ´æ¸³ÖµµÄ£¬ÄãÔËĞĞmainµÄÊ±ºòÖ»¼ÓÔØÁËÀà£¬Õâ¸öÊ±ºòÄÚ´æÀï»¹Ã»ÄÇ¸ö±äÁ¿ÖµÕ¦ÒıÓÃ£¿¶ø¼ÓstaticËæÀàÒ»Æğ¸³Öµ£¬Àà¼ÓÔØÁË£¬ÄÚ´æÀïÒ²ÓĞÁË*/
+		System.out.print("çŸ©å½¢1ã€2çš„é¢ç§¯åˆ†åˆ«ä¸ºï¼š"+s(t1.chang,t1.kuan)+" "+s(t2.chang,t2.kuan));/*éé™æ€å¸¸é‡æ˜¯éšç€å¯¹è±¡å®ä¾‹åŒ–æ‰åˆ†é…å†…å­˜èµ‹å€¼çš„ï¼Œä½ è¿è¡Œmainçš„æ—¶å€™åªåŠ è½½äº†ç±»ï¼Œè¿™ä¸ªæ—¶å€™å†…å­˜é‡Œè¿˜æ²¡é‚£ä¸ªå˜é‡å€¼å’‹å¼•ç”¨ï¼Ÿè€ŒåŠ staticéšç±»ä¸€èµ·èµ‹å€¼ï¼Œç±»åŠ è½½äº†ï¼Œå†…å­˜é‡Œä¹Ÿæœ‰äº†*/
 		
 	}
 

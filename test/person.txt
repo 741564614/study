@@ -1,0 +1,50 @@
+package person;
+
+
+public class Person {
+		protected String name;
+		protected int id;
+		protected String sex;
+		Person(String name,String sex){
+			this.name=name;
+			this.sex=sex;
+		}
+		protected void id(int id) {
+			this.id=id;
+		}
+}
+		
+		
+class student extends Person{
+	char evaluate;
+	char k;
+	protected void id(int b) {
+		this.id=b;
+		this.k='s';
+	}
+	student(String a,String c,int b,char d){
+		super(a,c);
+		id(b);
+		this.evaluate=d;
+	}
+	public String toString() {
+		return "姓名:"+this.name+'\n'+"编号："+ this.k+this.id+'\n'+"性别"+this.sex+'\n'+"评价："+this.evaluate;
+	}
+}
+
+class teacher extends Person{
+	String subject;
+	char k;
+	public String toString() {
+		return "姓名:"+this.name+'\n'+"编号："+ this.k+this.id+'\n'+"性别"+this.sex+'\n'+"所教科目："+this.subject;
+	}
+	protected void id(int b) {
+		this.id=b;
+		this.k='t';
+	}
+	teacher(String a,String c,int b,String d){
+		super(a,c);
+		id(b);
+		this.subject=d;
+	}
+}

@@ -1,0 +1,32 @@
+package person;
+import java.util.Scanner;
+public class Method {
+	public static void main(String args[]) {
+		@SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请选择建立教师档案还是学生档案，教师请按1，学生请按2");
+		int l=sc.nextInt();
+		if(l==1) {
+			System.out.println("请依次输入名字、教师编号、性别、所教科目");
+			String a1=sc.next();
+			int b1=sc.nextInt();
+			String c1=sc.next();
+			String d1=sc.next();
+			Person t1=new teacher(a1,c1,b1,d1);
+			System.out.println("输入完成，你输入的档案如下 :");
+			System.out.print(t1.toString());
+		}
+		else if(l==2) {
+			System.out.print("请依次输入名字、学生编号、性别、评价");
+			String a2=sc.next();
+			int b2=sc.nextInt();
+			String c2=sc.next();
+			String s = sc.next();
+			char d2 = s.charAt(0);
+			Person s1=new student(a2,c2,b2,d2);
+			System.out.println("输入完成，你输入的档案如下 :");
+			System.out.print(s1.toString());
+		}
+		System.gc();
+	}
+}

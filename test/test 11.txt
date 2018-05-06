@@ -1,0 +1,79 @@
+package person;
+import java.util.Scanner;
+public class Method {
+	public static void main(String args[]) {
+		System.out.println("请选择建立教师档案还是学生档案，教师请按1，学生请按2");
+		@SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in);
+		int l=sc.nextInt();
+		if(l==1) {
+			System.out.println("请依次输入名字、教师编号、性别、所教科目");
+			String a1=sc.next();
+			int b1=sc.nextInt();
+			String c1=sc.next();
+			String d1=sc.next();
+			teacher t1=new teacher(a1,c1,b1,d1);
+			System.out.println("输入完成，你输入的档案如下 :");
+			System.out.println("姓名："+t1.name);
+			System.out.println("编号："+t1.k+t1.id);
+			System.out.println("性别："+t1.sex);
+			System.out.println("所教科目："+t1.subject);
+		}
+		else if(l==2) {
+			System.out.print("请依次输入名字、学生编号、性别、评价");
+			String a2=sc.next();
+			int b2=sc.nextInt();
+			String c2=sc.next();
+			String s = sc.next();
+			char d2 = s.charAt(0);
+			student s1=new student(a2,c2,b2,d2);
+			System.out.println("输入完成，你输入的档案如下 :");
+			System.out.println("姓名："+s1.name);
+			System.out.println("编号："+s1.k+s1.id);
+			System.out.println("性别："+s1.sex);
+			System.out.println("评价："+s1.evaluate);
+		}
+		System.gc();
+	}
+}
+
+class person {
+	protected String name;
+	protected int id;
+	protected String sex;
+	person(String name,String sex){
+		this.name=name;
+		this.sex=sex;
+	}
+	protected void id(int id) {
+		this.id=id;
+	}
+}
+
+class student extends person{
+	char evaluate;
+	char k;
+	protected void id(int b) {
+		this.id=b;
+		this.k='s';
+	}
+	student(String a,String c,int b,char d){
+		super(a,c);
+		id(b);
+		this.evaluate=d;
+	}
+}
+
+class teacher extends person{
+	String subject;
+	char k;
+	protected void id(int b) {
+		this.id=b;
+		this.k='t';
+	}
+	teacher(String a,String c,int b,String d){
+		super(a,c);
+		id(b);
+		this.subject=d;
+	}
+}

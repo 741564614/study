@@ -14,10 +14,7 @@ public class Method {
 			String d1=sc.next();
 			teacher t1=new teacher(a1,c1,b1,d1);
 			System.out.println("输入完成，你输入的档案如下 :");
-			System.out.println("姓名："+t1.name);
-			System.out.println("编号："+t1.k+t1.id);
-			System.out.println("性别："+t1.sex);
-			System.out.println("所教科目："+t1.subject);
+			System.out.print(t1.toString());
 		}
 		else if(l==2) {
 			System.out.print("请依次输入名字、学生编号、性别、评价");
@@ -28,10 +25,7 @@ public class Method {
 			char d2 = s.charAt(0);
 			student s1=new student(a2,c2,b2,d2);
 			System.out.println("输入完成，你输入的档案如下 :");
-			System.out.println("姓名："+s1.name);
-			System.out.println("编号："+s1.k+s1.id);
-			System.out.println("性别："+s1.sex);
-			System.out.println("评价："+s1.evaluate);
+			System.out.print(s1.toString());
 		}
 		System.gc();
 	}
@@ -62,11 +56,17 @@ class student extends person{
 		id(b);
 		this.evaluate=d;
 	}
+	public String toString() {
+		return "姓名:"+this.name+'\n'+"编号："+ this.k+this.id+'\n'+"性别"+this.sex+'\n'+"评价："+this.evaluate;
+	}
 }
 
 class teacher extends person{
 	String subject;
 	char k;
+	public String toString() {
+		return "姓名:"+this.name+'\n'+"编号："+ this.k+this.id+'\n'+"性别"+this.sex+'\n'+"所教科目："+this.subject;
+	}
 	protected void id(int b) {
 		this.id=b;
 		this.k='t';

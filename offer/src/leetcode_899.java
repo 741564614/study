@@ -8,7 +8,7 @@ public class leetcode_899 {
     }
     public static String orderlyQueue(String s, int _k) {
         char[] cs = s.toCharArray();
-        //k==1时使用最小表示法
+        //k==1时使用最小表示法，也可以将s复制一份拼接在s后面，然后维持s.length()长度的窗口暴力比较得到所需值
         if (_k == 1) {
             int i = 0, j = 1, k = 0, n = cs.length;
             while (i < n && j < n && k < n) {

@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+package leetcode.leetcode202208;
 
 public class leetcode_622 {
     public static void main(String[] args) {

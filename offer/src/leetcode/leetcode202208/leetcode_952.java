@@ -1,3 +1,5 @@
+package leetcode.leetcode202208;
+
 import java.util.*;
 
 public class leetcode_952 {

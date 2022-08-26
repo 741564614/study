@@ -16,7 +16,7 @@ public class leetcode_662 {
         Deque<Integer> indexQueue = new LinkedList<>();
         queue.offer(root);
         indexQueue.offer(1);
-        int max = 0;
+        int max = 1;
         while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {

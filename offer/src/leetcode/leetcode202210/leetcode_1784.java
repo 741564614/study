@@ -1,4 +1,4 @@
-package leetcode.leetcode202209;
+package leetcode.leetcode202210;
 
 public class leetcode_1784 {
     public boolean checkOnesSegment(String s) {

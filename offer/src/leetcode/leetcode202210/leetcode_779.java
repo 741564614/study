@@ -17,4 +17,9 @@ public class leetcode_779 {
         }
         return change ? 1 : 0;
     }
+
+    public int kthGrammar02(int n, int k) {
+        return Integer.bitCount(k - 1) & 1;
+    }
+
 }

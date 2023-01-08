@@ -55,15 +55,17 @@ public class leetcode_1803 {
         sum += cur.sum;
         return sum;
     }
-}
 
-class Trie {
-    // son[0] 表示左子树，son[1] 表示右子树
-    Trie[] son = new Trie[2];
-    int sum;
+    class Trie {
+        // son[0] 表示左子树，son[1] 表示右子树
+        Trie[] son = new Trie[2];
+        int sum;
 
-    public Trie() {
-        sum = 0;
+        public Trie() {
+            sum = 0;
+        }
+
     }
-
 }
+
+
